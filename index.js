@@ -18,7 +18,7 @@ const fs = require("fs");
 
 //specify that we want to run our website on 'http://localhost:8000/'
 const host = 'localhost';
-const port = 8000;
+const PORT =  8000 || process.env.PORT;
 
 
 var publicPath = (process.cwd()+'/public'); //get the path to use our "public" folder where we stored our html, css, images, etc
@@ -46,6 +46,6 @@ filenames.forEach((file) => {
 });
 
 app.use(express.static(publicPath));  //tell express to use that folder
-app.listen(port, () => console.log(`Listening on ${ port } in` + process.cwd()))
 
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
