@@ -18,7 +18,7 @@ const fs = require("fs");
 
 //specify that we want to run our website on 'http://localhost:8000/'
 const host = 'localhost';
-const PORT =  8000 || process.env.PORT;
+const PORT =  process.env.PORT;
 
 
 var publicPath = (process.cwd()+'/public'); //get the path to use our "public" folder where we stored our html, css, images, etc
