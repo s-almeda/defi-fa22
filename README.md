@@ -36,17 +36,20 @@ Go back to your Command Line, and run:
 $ npm start
 ```
 Your app should now be running on [localhost:8000](http://localhost:8000/).
+Any changes you make to the html/css/javascript should be reflected immediately. 
+Be sure to recomment lines 12 and 13, then uncomment line 16 before you push changes to GitHub. 
 
 ## Deploying to Heroku
-
+I'm not actually sure if this will work from your machines, but I believe that if you push changes to the GitHub they will be reflected on the live site. If not, I may have to run commands on my machine to get the live site to reflect updates. We can work it out! 
+Pushing changes to github will look like the following: 
 ```
-$ heroku create
-$ git push heroku main
-$ heroku open
+$ git add CHANGEDFILENAME.txt 
+$ git commit -m "describe your changes here"
+$ git push
 ```
-or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
 ## Documentation
 
